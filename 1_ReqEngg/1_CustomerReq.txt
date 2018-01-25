@@ -6,7 +6,8 @@ xyz Company
 					Sub:	Request for a physical Chat-Bot
 
 	Hello Sir/Madam,
-			My company has a lots of issue for not having a physical chat-bot as we are not able to handle too many works together. So we need such robot with some AI capability and also the following requirements. Please let us know if you and your team can give us such thing(s) by responding as soon as possible.
+			My company has a lots of issue for not having a physical chat-bot as we are not able to handle too many works together. So we need such robot with some AI capability and also the following requirements. 
+			Please let us know if you and your team can give us such thing(s) by responding as soon as possible.
 
 
 		Requirements:
