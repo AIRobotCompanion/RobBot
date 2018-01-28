@@ -1,0 +1,170 @@
+\documentclass{article}
+\begin{document}
+	\title{Project: RobBot}
+	\author{Aditya, Anuj, Abhijit, Sayan\\IIIT Kalyani\\}
+	\date{\today}
+	\maketitle
+%\tableofcontents
+%\listoffigures
+%\listoftables
+	\begin{abstract}
+	There are a lots of Chat-Bots \& robots out there, but they are either too complex or too costly for use. Our moto would be to make such small physical chat-bot that will communicate with us in natural languages like simple English (Hear \& Talk) and do some very basic movements using low cost Arduino at it's core. This would be our first step \& later we'll jump to extended features like machine learning and artificial intelligence.
+	\end{abstract}
+	\section{Phases:}
+		\subsection{Requirement Engineering:}
+		Types:
+		\begin{enumerate}
+			\item Functional Requirements(FR):
+			\\What Functionalities \& Software Bahaviour Users Want
+			\begin{enumerate}
+				\item Good Calculation; \item Good data manipulation; \item Good Processing; \item Good logical decision-making.
+			\end{enumerate}
+			\item Non-Functional Requirements(NFR):
+			\\System Requirements
+			\begin{enumerate}
+				\item Quality \& Attributes \item Design \& Architecture
+			\end{enumerate}
+			Cinsiderable things
+			\begin{itemize}
+				\item Performance \item Availability \item Maintability \item Portability \item Reliability \item Robustness \item Security \item Scability \item Tastability \item Usability
+			\end{itemize}
+			Approaches:
+			\begin{itemize}
+				\item Product Oriented: \item Process Oriented: \item Qualitative: \item Quantitative:
+			\end{itemize}
+			\item Interface Specification(IS):
+			\\Link with Softwares
+			\begin{itemize}
+				\item Operating Systems: Linux, Windows, Mac, Android \item Databases: OracleSQL, MySQL, SQLite \item Database Connector: JDBC connector J \item Serial Communication: RxTx Library \item Program Uploader: Arduino IDE
+			\end{itemize}
+			Hardwares
+			\begin{itemize}
+				\item Computer HardDisk (to save Controlling Software) \item ArduinoUNO (atmel-328p) \item Breadboard, PCB, Wires \& connectors \item Motors \& Wheels \item Bluetooth/WiFi module \item Ultrasonic Sensors, Infrared Sensors \item Speakers
+			\end{itemize}
+		\end{enumerate}
+		Steps:
+		\begin{enumerate}
+			\item Requirement Development:		
+			\begin{itemize}
+				\item Feasibility Study:
+				\begin{itemize}
+					\item Operational Feasibility:
+\\Does the system serve the organizational objectives?	\textbf{YES} (requirements inside letter \& high usability in near future)
+					\item Technical Feasibility:
+\\Can the system be built using available technology in given time \& integrated with other surrounding systems as required by overall architecture?: \textbf{YES} (Tech. Avail. OSs(Linux, Windows, Mac, Android), Arduino, Java, SQL)
+					\item Economical Feasibility:
+\\Can the system be built using available technology in given time and budget? \textbf{YES} (OSs(Linux: Free (donation: optional), Windows: Rs. 8000(original) or free(pirated), Mac: Rs. 1000, Android: Rs. Rs. 10000...\emph{***If one has anyone of these, no need for extra cost execpt charging power}), ArduinoUNO(Rs. 500 approx.), Java, SQL: FREE; time=8 weeks...enough, budget=1000 Rs.)
+				\end{itemize}
+				\item Eliciting Requirements:
+				Source of all requirements are identified and by using sources, the users' needs \& all the possible problems are being identified:
+\\People involved (\emph{Stakeholders}) are End users, Managers, developers, testers, domain experts \& business analysts.
+				\\Stakeholders' Characteristics:
+				\begin{itemize}
+					\item Affected/Benefited people: Customers, other companies;
+					\item responsible for what we intend to do: Customer;	
+					\item followers:..., Rivals:...;
+					\item Developers
+					\item Contributors(financial:..., Technical...);
+				\end{itemize}
+				Problems in Eliciting Requirements:
+				\begin{itemize}
+					\item \emph{User not sure about requirements:} YES(as the system is completely new to us, and there are all the parts made differently, \& we have to add them together);
+					\item \emph{Communication gap:} NOT SO MUCH(the end user is not far away from us to communicate any time);
+					\item \emph{Conflicting requirements:} NO(the required product is completely clear to make);
+					\item \emph{Volatile requirements:} MAY-BE(as the quality can be more better than we can create).
+				\end{itemize}
+				Techniques:
+				\begin{itemize}
+					\item \emph{Interviewing} (Face to face interaction): No NEED
+					\item \emph{Focus groups} (Enhanced meeting with 6-10 people)
+					\\Types:
+					\begin{itemize}
+						\item Two-way (between two groups with predefined rules)
+						\item Dual moderator
+						\begin{itemize}
+							\item Model-1: (two moderators, one for discipline and the other for maintain content flow): Properly controlled;
+							\item Model-2: (two miderators, oppose one another): Pros. \& Cons. for each decision;
+						\end{itemize}
+						\item Respondent moderator: (respondents are asked for act as the moderator temporarily as they might be owner of session)
+						\item Client perticipant: (Client would involve in the discussion and assure the project owner at last about his/her satisfaction)
+						\item Mini focus group: (4-5 member for avoiding much confusion)
+						\item Teleconference (telephone network can be used)
+						\item Online (reliable computers \& internet can cover)
+					\end{itemize}
+					\item \emph{Facilitated workshops} (gather best requirements \& show customers available prototypes or similar projects available in the market for better customer decision for actual planned product)
+					\item \emph{Prototyping}
+					\\Model for demonstration before going for actual extended or advanced product. \\Types:
+					\begin{itemize}
+						\item Proof-of-principle(bread-board) (some of intended design with some codes are tested not visual appearances): \textbf{YES} (this can be done);
+						\item Form Study (only visual appearances is considered, not the functionalities): \textbf{NO} (this can't be done);
+						\item Visual (simulates the appearances not the functionalities of the final product): \textbf{NO} (this can't be done);
+						\item Functional/working (simulates the actual functionality of the intended work): \textbf{NO} (this can't be done);
+					\end{itemize}
+					\item \emph{Questionnaires} (a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study): \textbf{NO} (the individuality can makes it very dificult to handle);
+					\item \emph{Brainstorming} (a face-to-face (verbal/non-verbal) group(of 6 people with one leader) discussion to produce ideas as much as possible): \textbf{MAYBE} (we 4 can do that);
+					\item \emph{Direct observation} (Observing and changing the system by the user): \textbf{YES} the scope can be made;
+					\item \emph{Apprenticing} (employee who is learning from skilled person or the user): \textbf{YES} (One of us can do the Job);
+				\end{itemize}
+				\item Requirements Analysis:
+				\\Understand gathered informations collected by elicitation process
+				\\Models:
+				\begin{itemize}
+					\item Use case model: \item System model:
+					\item Data modeling:
+					\begin{itemize}
+						\item data-flow diagram(DFD): \item data dictionary(DD): \item entity-relationship(ER): \item Control flow(CF): \item decision table:
+					\end{itemize}
+					\item Information modeling: \item Object-oriented analysis: \item Scenario-based modeling: \item Flow-oriented modeling: \item Class diagram:
+				\end{itemize}
+				\item Specify Requirements(SRS):
+				\\IEEE standard 830-1993:
+				\begin{enumerate}
+					\item Introduction
+					\begin{enumerate}
+						\item Purpose \item Scope \item Definition, acronyms \& abbrevations \item References \item Overview
+					\end{enumerate}
+					\item Overall description
+					\begin{enumerate}
+						\item Product perspective
+						\begin{enumerate}
+							\item System interfaces \item User interfaces \item Software interfaces \item Commmunications interfaces \item Memory constrains \item Operations \item Site adaptation requirements
+						\end{enumerate}
+						\item Product functions \item User characteristics \item Constraints \item Assumptions and dependencies \item Apportioning of requirements
+					\end{enumerate}
+					\item Specific requirements
+					\begin{enumerate}
+						\item External interface requirements 
+						\begin{enumerate}
+							\item User interfaces \item Hardware interface \item Software interface \item Communication interface
+						\end{enumerate}
+						\item Specific requirements
+						\begin{enumerate}
+							\item Sequence diagrams \item Classes for classification of specific requirements
+						\end{enumerate}
+						\item Performance requirements \item Design constraints
+						\item Software system attributes
+						\begin{enumerate}
+							\item Reliability \item Availibility \item Security \item Maintainability
+						\end{enumerate}
+						\item Other requirements
+					\end{enumerate}
+					\item Supporting information
+					\begin{enumerate}
+						\item Table of contents and index \item Appendixes
+					\end{enumerate}
+				\end{enumerate} 
+				\item Validate Requirements:
+			\end{itemize}
+			\item Requirements Management:
+		\end{enumerate}
+		Models:
+		\begin{enumerate}
+			\item Structured Analysis Model:
+			\item Object Oriented Analysis Model:
+		\end{enumerate}
+		\subsection{Designing:}
+		\subsection{Coding \& Testing:}
+		\subsection{Implementation:}
+		\subsection{Maintenance:}
+\end{document}
+
