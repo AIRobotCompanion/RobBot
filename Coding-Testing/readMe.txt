@@ -17,7 +17,7 @@ mysql> exit;[ENTER]
 
 ...Run Program...
 
-$ cd ~/Desktop/RobBot/Prog/[ENTER]
+$ cd ~/Desktop/RobBot/Prog/usrAuth/[ENTER]
 $ javac index.java -Xlint:deprecation[ENTER]
 $ java index[ENTER]
 
