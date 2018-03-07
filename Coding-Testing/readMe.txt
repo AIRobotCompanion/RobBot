@@ -1,5 +1,6 @@
 This Folder contains the Java .class files for WelcomePage, RegistrationForm, LoginForm, UserPage
-***SET-UP MySQL***
+***USER-AUTHENTICATION***
+...SET-UP MySQL...
 
 Ctrl+Alt+T
 $ sudo apt-get install mysql-server[ENTER]
@@ -14,8 +15,11 @@ mysql> desc Users;[ENTER]
 mysql> exit;[ENTER]
 
 
-***Run Program***
+...Run Program...
 
 $ cd ~/Desktop/RobBot/Prog/[ENTER]
 $ javac index.java -Xlint:deprecation[ENTER]
 $ java index[ENTER]
+
+
+***DEVICE-AUTHENTICATION***
