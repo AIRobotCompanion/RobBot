@@ -16,7 +16,8 @@ mysql> desc Users;[ENTER]
 mysql> exit;[ENTER]
 
 ...Setup Pipeline...
-$ cd ~/Desktop/[ENTER]
+Download MySQL Connector/J from this link:- https://dev.mysql.com/downloads/connector/j/
+$ cd ~/Downloads/[ENTER]
 $ tar -xvf mysql-connector-java-5.1.45-bin.tar[ENTER]
 $ cd mysql-connector-java-5.1.45/[ENTER]
 $ sudo cp mysql-connector-java-5.1.45-bin.jar /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/[ENTER]
