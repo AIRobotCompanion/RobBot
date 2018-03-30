@@ -1,0 +1,41 @@
+\chapter{Specific Requirements}
+
+\section{External interface requirements}
+All input into \& output from software
+\subsection{User interface}
+ASCII character string in the Text Boxes
+\subsection{Hardware interface}
+ASCII characters \& numbers one by one
+\subsection{Software interface}
+Both variable values \& control informations
+\subsection{Communication interface}
+Software back-end: Database(MySQL commands), Bot(Specific ASCII commands made with RobBot protocols)
+\\Hardware back-end: Arduino binary commands+values, serial values from connector device(esp8266 or direct connection from computer)
+\\very reliable JDBC connector J connects the database with the software
+
+\section{Specific requirements}
+\subsection{Data flow diagram}
+Attached
+\subsection{Class diagrams}
+Attached
+\subsection{Sequence diagrams}
+Attached
+\section{Performance requirements}
+The software depends on the compatibility of the java version in the main controller device where the software would be installed.
+\\High speed connector technology WiFi \& JDBC
+
+\section{Design constraints}
+The design is not completely bugless, as it would be developed in current computer technology, but in future some compatibility issue might come.
+\\It can be resolved by version controlling
+
+\section{Software system attributes}
+\subsection{Reliability}
+The software have to be highly reliable in the sense of users' information \& the task it will be given to.
+\subsection{Availibility}
+The software have to be available $24\times 7$ \& only one user can access at a time.
+\subsection{Security}
+In future we'll use mCrypton that is easy to know, but not easy to hack to upload the users' information into the database.
+\subsection{Maintainability}
+This tast would be done by manager in client side \& by developer team in implementors' side with proper version control.
+\section{Other requirements}
+Not specified.
