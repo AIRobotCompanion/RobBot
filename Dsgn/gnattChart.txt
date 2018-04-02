@@ -1,0 +1,35 @@
+Setup Order				1
+
+Collect & analysis req.			1
+Feasibility study			2
+Eliciting requirements			2
+Specify & validate			1
+Requirement management			2
+
+make SRS Doc.				3
+Planning & team making			6
+
+Activity diagram, PERT chart, CPM & Gnatt chart 	3
+
+Estimation of Cost, size & effort	2
+physical device & environment		3
+design modules				2
+Scheduling				2
+divide team				1
+GUI					1
+Hardware				1
+Interfacing				2
+send for coding & testing		1
+
+Software Modules			18
+Hardware modules			10
+Connection				1
+
+Code & Test				30
+
+Integrate & bug Fixing			2
+
+Version Control				2
+Certification				2
+
+Launch & Feedback			2
