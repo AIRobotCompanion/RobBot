@@ -1,0 +1,39 @@
+***Data Dictionary***
+
+	Sequence	+
+	Repetition	[]
+	OR		|
+	Selection	{}
+	upper Limit	{}^y
+
+
+data_in		string	= usr_data_in + md_data_in
+data_out	string	= usr_data_out + md_data_out
+
+display		string
+
+rd_data_in	signal	= { user command | device_address }
+rd_data_out	signal	= raw device response
+
+db_data_send	string	= user authentication details
+db_data_get	string	= user authentication details
+
+usr_data_in	string	= { user authentication details | user's robot commands }
+usr_data_out	string	= { user authentication details | robot's understandable response | process status}
+
+md_data_in	string	= modified device input data to make human understandable
+md_data_out	string	= modified device output data to convert into device command signal
+
+dev_nm		string	= device name => MAC address
+dev_cnfrm	boolean	= device confirmation (YES/NO)
+
+reg_data	string	= registration data
+reg_data_in	string	= registration data input
+reg_data_out	string	= registration data output
+
+log_data	string	= login data
+log_data_in	string	= login data input
+log_data_out	string	= login data output
+
+result_set	string	= result set for SQL DB Query
+confirm		boolean	= confirmation (YES/NO)
