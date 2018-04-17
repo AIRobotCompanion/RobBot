@@ -1,0 +1,20 @@
+import packages
+Registration starts
+Declare Variables/Objects
+Override onCreate
+	get User Inputs
+Override onClick
+	if username not Null
+		if mail id not Null
+			if mail id Proper
+				if password not Null
+					if confirm password id not Null
+						call send to DB status
+						if status OK
+							call Usr Page
+						else show error
+					else show error
+				else show error				
+			else show error
+		else show error
+	else show error
