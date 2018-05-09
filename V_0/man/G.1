@@ -1,0 +1,77 @@
+.TH RobBot 1 "April 1, 2018" "Version 1.0" "Java-Arduino"
+
+.SH NAME
+RobBot - a software to use Arduino based Robot
+
+.SH SYNOPSIS
+make clean
+sh install.sh
+sh run.sh
+
+.SH DESCRIPTION
+It is a software based on 
+.B C
+(-99/-5.4.0),
+.B Java
+(1.8.0_162) and
+.B Arduino
+(1.8.5) Languages
+
+
+To check these versions on your computer, search for "
+.B gcc -v
+" & "
+.B java -version
+" in the 
+.B CLI 
+(command-line interface).
+and Open Arduino 
+.B IDE
+(integrated development environment)
+
+If your computer is lacking of use of old versions, please Update them to get better performance. Actually the architecture of this software is as follows, at the heart or core it's C and the outside or say as a wrapper lies Java.
+
+The control-flow is as follows, ↓
+
+C								Java ☕ 
+
+
+.SH OPTIONS
+In this first version Special options are not included.
+
+.SH BUGS
+This software is not capable to handle infinite (
+.B inf
+) values, so you have to keep that in mind.
+
+You have to open the main file to
+.B Modify
+the y = f(x) function and build the Software.
+
+
+.SH FILES
+---/Graph/man/G.1
+
+.SH SEE ALSO
+.BR vi (1),
+.BR nano (1),
+.BR gcc (1),
+.BR javac (1),
+.BR java (1),
+.BR make (1)
+
+.SH HISTORY
+2018 – Originally written by Sayan Shankhari (sayanthecomputerguy@gmail.com).
+
+Helped, Tested & Fully Contributed by
+
+Aditya Agarwal ()
+
+Anuj Kumar Pathak ()
+
+Abhijit Bari ()
+
+.SH REPORT
+1st. Good emails' problem fixing
+
+2nd. Stupid emails with RTFM (read the fuckin'/frickin'/fine/friendly manual)
